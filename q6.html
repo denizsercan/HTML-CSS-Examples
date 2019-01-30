@@ -1,0 +1,251 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            min-width: 1000px;
+            min-height: 1300px;
+            padding: 35px 35px 35px 35px;
+        }
+
+        .left1 {
+            border-radius: 10px;
+            border: 1px solid #F66B08;
+            background-color: #FEE5D3;
+            padding: 10px 15px 10px 15px;
+            width: 265px;
+        }
+
+        .leftHead {
+            color: #F66B08;
+            font-size: 23px;
+            font-weight: bold;
+        }
+ 
+        hr {
+            border: 1px solid gray;
+            width: 270px;
+        }
+
+    
+        .blue {
+            color: blue;
+        }
+
+        .list2, .list1 {
+            background-color: #64A4C9;
+            padding: 0px 80px 0px 0px;
+            width: 8px;
+        }
+
+        .listleft {
+            position: absolute;
+            left: 60px;
+            top: 850px;
+        }
+
+        .listright {
+            position: absolute;
+            left: 200px;
+            top: 850px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-top-color: white;
+            border-left-color: white;
+        }
+
+        .right {
+            position: absolute;
+            left: 380px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left1">
+        <p>
+            <span class="leftHead">List Item Display<br /> Role</span>
+            <br />           
+            You may have noticed that the list<br />
+            style properties applies to the elements<br />
+            whose display value in the lis-item<br />
+            The CSS2.1 specification allows any<br />
+            element to perform like list item by<br />
+            setting its <b>display</b> property to <b>list-<br />
+            item.</b>This property can be applied<br />
+            to any Html elements or element in<br />
+            another XML language. For example,<br />
+            you could automatically bullet<br />
+             or number of series paragraph<br />
+            by setting the display property of<br />
+            paragraph (p) elements to <b>list-item</b><br />
+            as shown in this example:
+        </p>
+        <p style="padding-left: 40px">
+            p.bulleted{<br>
+            display: lis-item;<br>
+            list-style-type: upper-<br>
+            alpha;<br>
+            }
+        </p>
+    </div>
+    <br><br><br><br><br>
+    <div>
+        <p>
+            <span style=" color: blue; font-weight: bold;font-size: 17px;">NOTE</span><br>
+            <hr align="left">
+            CSS3 adds the <b>hanging</b> value for this<br>
+            property. It is similar to <b>inside</b>, but<br>
+            the makers would appear outside and<br>
+            abutting the left edge of the shaded area,<br>
+            as shown in <span class="blue">Figure 12-24.</span>
+        </p>
+    </div>
+    <br><br><br> <br> <br><br><br><br> <br><br><br>
+    <div>
+        <hr align="left">
+        <span class="blue">Figure 12-24</span> <i>The list style position<br> property</i>
+    </div>
+
+
+    <div class="listleft">
+        <span class="outside">outside</span>
+        <ul class="list1">
+            <li>crimson</li>
+            <li>cobalt</li>
+            <li>veridian</li>
+            <li>umber</li>
+            <li>ultramarine</li>
+        </ul>
+    </div>
+
+    <div class="listright">
+        <span class="inside">inside</span>
+        <ul class="list2">
+            <li>crimson</li>
+            <li>cobalt</li>
+            <li>veridian</li>
+            <li>umber</li>
+            <li>ultramarine</li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <p>
+            The remaining keywords <span class="blue">(table12-1)</span> specify varius numbering and letter-<br />
+            ing styles for use with ordered lists.<br />
+            <br />
+            <i><span><font color="blue">Table 12-21.</font></span> Lettering and numbering system (CSS2.1)</i>
+        <p>
+            <br />
+
+            <table class="table">
+                <tr>
+                    <th align="left">Keyword</th>
+                    <th align="left">System</th>
+                </tr>
+                <tr>
+                    <td>decimal</td>
+                    <td>1,2,3,4,5..</td>
+                </tr>
+                <tr>
+                    <td>decimal-leading-zero</td>
+                    <td>01,02,03,04,05..</td>
+                </tr>
+                <tr>
+                    <td>lower-alpha</td>
+                    <td>a,b,c,d,e</td>
+                </tr>
+                <tr>
+                    <td>upper-alpha</td>
+                    <td>A,B,C,D,E</td>
+                </tr>
+                <tr>
+                    <td>lower-latin</td>
+                    <td>a,b,c,d,e(same as lower-alpha)</td>
+                </tr>
+                <tr>
+                    <td>upper-latin</td>
+                    <td>A,B,C,D,E (same as upper-alpha)</td>
+                </tr>
+                <tr>
+                    <td>lower-roman</td>
+                    <td>i,ii,iii,iv,v</td>
+                </tr>
+                <tr>
+                    <td>upper-roman</td>
+                    <td>i,ii,iii,iv,v</td>
+                </tr>
+                <tr>
+                    <td>lower-greek</td>
+                    <td>als.d.d</td>
+                </tr>
+
+            </table>
+            <br>
+
+        <p>
+            <span class="blue"><font size="5"><b>Marker Position</b></font></span><br />
+            <br />
+            By default, the marker hands outside the content area for the list item, dis-<br>
+            playing as a hanging indent. The <b>list-style-position</b> property allows you<br>
+            to bull the bullet inside the content area so its run into the list content.<br>
+            <br />
+            <span style="color:#F66B08"><b>list-style-position</b></span><br>
+            <br>
+            <span>
+                <i><b>Values:</b></i> inside | outsite | inherit </span>
+            <br /><br />
+                    <span>
+                        <i><b>Default:</b></i>    outsite</span>
+                        <br /><br />
+                            <span>
+                                <i><b>Applies to:</b></i> ul,ol and li (<i>or elements whose display value is</i> list-item)</span>
+                            <br /><br />
+                                    <span>
+                                        <i><b>inherits:</b></i> yes</span>
+                                    <br /><br />
+                                            I've applied a background color to the list item in <span class="blue">Figure 12-24</span> to reveal the<br />
+                                            boundaries of their content area boxes. You can see that when the position<br />
+                                            is set to <b>outside</b>(left), the markers fall outside the content area, and when it<br />
+                                            is set to <b>inside</b>, the content area box extends to include marker.<br />
+
+        </p>
+
+        <p style="padding-left: 40px">
+            li{background-color: #F99;}<br />
+            ul#outside{<font style=" color:#f66b08">
+            list-style-position: outside;</font>}<br />
+            ul#inside{<font style="color:#F66B08">list-style-position: inside;</font>}<br />
+        </p>
+
+        <p>
+            <span class="blue"><font size="5"><b>Make your Own bullets</b></font></span><br />
+            <br />
+            You can also use your own image as a bullet using the <b>list-style-image</b><br />
+            property.
+            <br /><br />
+            <span style="color:#F66B08"><b>list-style-image</b></span><br>
+            <br />
+            <span>
+                <i><b>Values:</b></i> url | none | inherit </span>
+                <br /><br />
+                    <span>
+                        <i><b>Default:</b></i> none</span>
+                        <br /><br />
+                            <span>
+                                <i><b>Applies to:</b></i> ul,ol and li (<i>or elements whose display value is</i> list-item)</span>
+                            <br /><br />
+                                    <span>
+                                        <i><b>inherits:</b></i> yes</span>
+                                    <br /><br />
+
+        </p>
+    </div>
+</body>
+</html>
